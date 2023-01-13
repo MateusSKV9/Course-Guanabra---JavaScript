@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+</head>
+<body>
+    <h1>Identificador de países</h1>
+    Digite seu país de origem <input type="text" name="txtps" id="txtps">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var txtpaís = window.document.querySelector('input#txtps')
+            var res = window.document.querySelector('div#res')
+            var país = txtps
+            res.innerHTML = `<p>Seu país é <strong>${país}</strong></p>` // Problema
+            if (país != 'Brasil'){
+                res.innerHTML += '<p>Você é <strong>estrangeiro!</strong></p>'
+            } else {
+                res.innerHTML += '<p>Você é <strong>brasileiro</strong></p>'
+            }   
+        }  
+    </script>
+</body>
+</html>
