@@ -18,13 +18,13 @@ function verificar() {
                 img.setAttribute('src','pexels-bess-hamiti-35537.jpg')
             } else if (idade < 21) {
                 // Jovem
-                img.setAttribute('src', '#')
+                img.setAttribute('src', 'jovem-m.jpg')
             } else if (idade < 50) {
                 // Adulto
-                img.setAttribute('src', '#')
+                img.setAttribute('src', 'homem.jpg')
             } else {
                 // Idoso
-                img.setAttribute('src', '#')
+                img.setAttribute('src', 'avô.jpg')
             }
         } else if (fsex[1].checked) {
             genero = 'mulher'
@@ -33,13 +33,13 @@ function verificar() {
                 img.setAttribute('src','pexels-pixabay-360299.jpg')
             } else if (idade < 21) {
                 // Jovem
-                img.setAttribute('src', '#')
+                img.setAttribute('src', 'jovem-f.jpg')
             } else if (idade < 50 ) {
                 // Adulto
-                img.setAttribute('src', '#')
+                img.setAttribute('src', 'mulher.jpg')
             } else {
                 // Idoso
-                img.setAttribute('src', '#')
+                img.setAttribute('src', 'avó.jpg')
             }
         }
         res.style.textAlign = 'center'
