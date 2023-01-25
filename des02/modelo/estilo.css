@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+* {
+    margin: 5px;
+}
+
 body {
     background-color: rgb(76, 76, 212);
     font: normal 15pt Arial;
